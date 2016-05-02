@@ -82,7 +82,7 @@ public abstract class MappingCollector<T, V extends Comparable<V>,  A extends IV
 		}
 		if (outnumber <= 0)
 			throw new IllegalArgumentException("outnumber has to be > 0!");
-		//Add the Conversions to the conversionsFor and usedIn Maps:
+		//Add the Conversions to the conversionsFor and usedIn Maps: pwr flwr 2 op
 		Conversion conversion = new Conversion(output, outnumber, ingredientsWithAmount);
 		conversion.value = arithmetic.getZero();
 		conversion.arithmeticForConversion = arithmeticForConversion;
